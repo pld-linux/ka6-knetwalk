@@ -1,18 +1,18 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeappsver	25.12.1
+%define		kdeappsver	25.12.2
 %define		qtver		6.8.0
 %define		kframever	6.13.0
 %define		kaname		knetwalk
 Summary:	Knetwalk
 Name:		ka6-%{kaname}
-Version:	25.12.1
-Release:	2
+Version:	25.12.2
+Release:	1
 License:	GPL v2+/LGPL v2.1+
 Group:		X11/Applications/Games
 Source0:	https://download.kde.org/stable/release-service/%{kdeappsver}/src/%{kaname}-%{version}.tar.xz
-# Source0-md5:	772f89a549d8c58ceb26761f889effec
+# Source0-md5:	72c0e8a7bb9feed4b46f801a6db03210
 URL:		http://www.kde.org/
 BuildRequires:	Qt6Core-devel >= %{qtver}
 BuildRequires:	Qt6Qml-devel >= %{qtver}
