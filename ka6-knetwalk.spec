@@ -5,7 +5,8 @@
 %define		qtver		6.8.0
 %define		kframever	6.13.0
 %define		kaname		knetwalk
-Summary:	Knetwalk
+Summary:	A single player logic game
+Summary(pl.UTF-8):	Jednoosobowa gra logiczna
 Name:		ka6-%{kaname}
 Version:	26.04.1
 Release:	1
@@ -40,7 +41,14 @@ Obsoletes:	ka5-%{kaname} < %{version}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-KNetWalk.
+Linux KNetWalk is a single player logic game. Construct the network,
+connecting all the terminals to the server in the fewest turns
+possible.
+
+%description -l pl.UTF-8
+KNetWalk jest logiczną grą dla pojedynczego gracza. Stwórz sieć łącząc
+wszystkie terminale do serwera w najmniejszej możliwej do osiągnięcia
+liczbie tur.
 
 %prep
 %setup -q -n %{kaname}-%{version}
